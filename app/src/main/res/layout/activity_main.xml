@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cardview_dark_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="44dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/mytextView1"
+                android:layout_width="309dp"
+                android:layout_height="32dp"
+                android:autoSizeMaxTextSize="100dp"
+                android:gravity="center"
+                android:text="@string/titulo"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/mytextView2"
+                android:layout_width="309dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:text="@string/mensaje"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/myeditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de Usuario" />
+
+            <EditText
+                android:id="@+id/myeditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="numberPassword" />
+
+            <TextView
+                android:id="@+id/mytextView3"
+                android:layout_width="246dp"
+                android:layout_height="32dp"
+                android:layout_margin="10dp"
+                android:textColor="#FF3333"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/mybutton"
+                android:layout_width="258dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_background"
+                android:text="Continuar"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/mytextView4"
+        android:layout_width="246dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="Version 1.0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

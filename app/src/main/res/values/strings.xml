@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Parcial</string>
+    <string name="titulo">Ingresar a TecnoWorld</string>
+    <string name="mensaje">Instrucciones varias para el proceso de login</string>
+</resources>
